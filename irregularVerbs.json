@@ -1,0 +1,829 @@
+{
+  "go": {
+    "persian": "رفتن",
+    "irregular": true,
+    "past": "went",
+    "past_participle": "gone"
+  },
+  "eat": {
+    "persian": "خوردن",
+    "irregular": true,
+    "past": "ate",
+    "past_participle": "eaten"
+  },
+  "fly": {
+    "persian": "پرواز کردن",
+    "irregular": true,
+    "past": "flew",
+    "past_participle": "flown"
+  },
+  "read": {
+    "persian": "خواندن",
+    "irregular": false
+  },
+  "see": {
+    "persian": "دیدن",
+    "irregular": true,
+    "past": "saw",
+    "past_participle": "seen"
+  },
+  "come": {
+    "persian": "آمدن",
+    "irregular": true,
+    "past": "came",
+    "past_participle": "come"
+  },
+  "take": {
+    "persian": "گرفتن",
+    "irregular": true,
+    "past": "took",
+    "past_participle": "taken"
+  },
+  "write": {
+    "persian": "نوشتن",
+    "irregular": true,
+    "past": "wrote",
+    "past_participle": "written"
+  },
+  "speak": {
+    "persian": "صحبت کردن",
+    "irregular": true,
+    "past": "spoke",
+    "past_participle": "spoken"
+  },
+  "buy": {
+    "persian": "خریدن",
+    "irregular": true,
+    "past": "bought",
+    "past_participle": "bought"
+  },
+  "drink": {
+    "persian": "نوشیدن",
+    "irregular": true,
+    "past": "drank",
+    "past_participle": "drunk"
+  },
+  "sing": {
+    "persian": "خواندن",
+    "irregular": true,
+    "past": "sang",
+    "past_participle": "sung"
+  },
+  "begin": {
+    "persian": "شروع کردن",
+    "irregular": true,
+    "past": "began",
+    "past_participle": "begun"
+  },
+  "run": {
+    "persian": "دویدن",
+    "irregular": true,
+    "past": "ran",
+    "past_participle": "run"
+  },
+  "know": {
+    "persian": "دانستن",
+    "irregular": true,
+    "past": "knew",
+    "past_participle": "known"
+  },
+  "have": {
+    "persian": "داشتن",
+    "irregular": true,
+    "past": "had",
+    "past_participle": "had"
+  },
+  "be": {
+    "persian": "بودن",
+    "irregular": true,
+    "past": "was/were",
+    "past_participle": "been"
+  },
+  "do": {
+    "persian": "انجام دادن",
+    "irregular": true,
+    "past": "did",
+    "past_participle": "done"
+  },
+  "get": {
+    "persian": "گرفتن",
+    "irregular": true,
+    "past": "got",
+    "past_participle": "gotten"
+  },
+  "bring": {
+    "persian": "آوردن",
+    "irregular": true,
+    "past": "brought",
+    "past_participle": "brought"
+  },
+  "choose": {
+    "persian": "انتخاب کردن",
+    "irregular": true,
+    "past": "chose",
+    "past_participle": "chosen"
+  },
+  "find": {
+    "persian": "یافتن",
+    "irregular": true,
+    "past": "found",
+    "past_participle": "found"
+  },
+  "give": {
+    "persian": "دادن",
+    "irregular": true,
+    "past": "gave",
+    "past_participle": "given"
+  },
+  "keep": {
+    "persian": "نگه داشتن",
+    "irregular": true,
+    "past": "kept",
+    "past_participle": "kept"
+  },
+  "learn": {
+    "persian": "یاد گرفتن",
+    "irregular": true,
+    "past": "learnt",
+    "past_participle": "learnt"
+  },
+  "meet": {
+    "persian": "ملاقات کردن",
+    "irregular": true,
+    "past": "met",
+    "past_participle": "met"
+  },
+  "pay": {
+    "persian": "پرداخت کردن",
+    "irregular": true,
+    "past": "paid",
+    "past_participle": "paid"
+  },
+  "sleep": {
+    "persian": "خوابیدن",
+    "irregular": true,
+    "past": "slept",
+    "past_participle": "slept"
+  },
+
+  "stand": {
+    "persian": "ایستادن",
+    "irregular": true,
+    "past": "stood",
+    "past_participle": "stood"
+  },
+  "teach": {
+    "persian": "آموزش دادن",
+    "irregular": true,
+    "past": "taught",
+    "past_participle": "taught"
+  },
+  "win": {
+    "persian": "بردن",
+    "irregular": true,
+    "past": "won",
+    "past_participle": "won"
+  },
+    "arise": {
+      "persian": "برخاستن",
+      "irregular": true,
+      "past": "arose",
+      "past_participle": "arisen"
+    },
+    "awake": {
+      "persian": "بیدار شدن",
+      "irregular": true,
+      "past": "awoke",
+      "past_participle": "awoken"
+    },
+    "bear": {
+      "persian": "تحمل کردن",
+      "irregular": true,
+      "past": "bore",
+      "past_participle": "borne"
+    },
+    "beat": {
+      "persian": "ضربه زدن",
+      "irregular": true,
+      "past": "beat",
+      "past_participle": "beaten"
+    },
+    "become": {
+      "persian": "شدن",
+      "irregular": true,
+      "past": "became",
+      "past_participle": "become"
+    },
+
+    "bend": {
+      "persian": "خم کردن",
+      "irregular": true,
+      "past": "bent",
+      "past_participle": "bent"
+    },
+    "bet": {
+      "persian": "شرط بندی کردن",
+      "irregular": true,
+      "past": "bet",
+      "past_participle": "bet"
+    },
+    "bid": {
+      "persian": "پیشنهاد دادن",
+      "irregular": true,
+      "past": "bid",
+      "past_participle": "bid"
+    },
+    "bite": {
+      "persian": "گاز گرفتن",
+      "irregular": true,
+      "past": "bit",
+      "past_participle": "bitten"
+    },
+    "bleed": {
+      "persian": "خونریزی کردن",
+      "irregular": true,
+      "past": "bled",
+      "past_participle": "bled"
+    },
+    "blow": {
+      "persian": "دمیدن",
+      "irregular": true,
+      "past": "blew",
+      "past_participle": "blown"
+    },
+    "break": {
+      "persian": "شکستن",
+      "irregular": true,
+      "past": "broke",
+      "past_participle": "broken"
+    },
+
+    "build": {
+      "persian": "ساختن",
+      "irregular": true,
+      "past": "built",
+      "past_participle": "built"
+    },
+
+    "catch": {
+      "persian": "گرفتن",
+      "irregular": true,
+      "past": "caught",
+      "past_participle": "caught"
+    },
+
+    "cling": {
+      "persian": "چسبیدن",
+      "irregular": true,
+      "past": "clung",
+      "past_participle": "clung"
+    },
+
+    "cost": {
+      "persian": "هزینه داشتن",
+      "irregular": true,
+      "past": "cost",
+      "past_participle": "cost"
+    },
+    "creep": {
+      "persian": "حرکت خزیدن",
+      "irregular": true,
+      "past": "crept",
+      "past_participle": "crept"
+    },
+    "cut": {
+      "persian": "بریدن",
+      "irregular": true,
+      "past": "cut",
+      "past_participle": "cut"
+    },
+    "deal": {
+      "persian": "معامله کردن",
+      "irregular": true,
+      "past": "dealt",
+      "past_participle": "dealt"
+    },
+    "dig": {
+      "persian": "حفر کردن",
+      "irregular": true,
+      "past": "dug",
+      "past_participle": "dug"
+    },
+
+    "draw": {
+      "persian": "کشیدن",
+      "irregular": true,
+      "past": "drew",
+      "past_participle": "drawn"
+    },
+    "dream": {
+      "persian": "رویا دیدن",
+      "irregular": true,
+      "past": "dreamt",
+      "past_participle": "dreamt"
+    },
+    "drive": {
+      "persian": "رانندگی کردن",
+      "irregular": true,
+      "past": "drove",
+      "past_participle": "driven"
+    },
+
+    "fall": {
+      "persian": "افتادن",
+      "irregular": true,
+      "past": "fell",
+      "past_participle": "fallen"
+    },
+    "feed": {
+      "persian": "غذا دادن",
+      "irregular": true,
+      "past": "fed",
+      "past_participle": "fed"
+    },
+    "feel": {
+      "persian": "حس کردن",
+      "irregular": true,
+      "past": "felt",
+      "past_participle": "felt"
+    },
+    "fight": {
+      "persian": "جنگیدن",
+      "irregular": true,
+      "past": "fought",
+      "past_participle": "fought"
+    },
+
+    "fit": {
+      "persian": "متناسب بودن",
+      "irregular": true,
+      "past": "fit",
+      "past_participle": "fit"
+    },
+    "flee": {
+      "persian": "فرار کردن",
+      "irregular": true,
+      "past": "fled",
+      "past_participle": "fled"
+    },
+    "fling": {
+      "persian": "پرت کردن",
+      "irregular": true,
+      "past": "flung",
+      "past_participle": "flung"
+    },
+
+    "forbid": {
+      "persian": "ممنوع کردن",
+      "irregular": true,
+      "past": "forbade",
+      "past_participle": "forbidden"
+    },
+    "forget": {
+      "persian": "فراموش کردن",
+      "irregular": true,
+      "past": "forgot",
+      "past_participle": "forgotten"
+    },
+    "forgive": {
+      "persian": "بخشیدن",
+      "irregular": true,
+      "past": "forgave",
+      "past_participle": "forgiven"
+    },
+    "freeze": {
+      "persian": "یخ زدن",
+      "irregular": true,
+      "past": "froze",
+      "past_participle": "frozen"
+    },
+
+
+      "grow": {
+        "persian": "رشد کردن",
+        "irregular": true,
+        "past": "grew",
+        "past_participle": "grown"
+      },
+      "hang": {
+        "persian": "آویزان کردن",
+        "irregular": true,
+        "past": "hung",
+        "past_participle": "hung"
+      },
+
+      "hear": {
+        "persian": "شنیدن",
+        "irregular": true,
+        "past": "heard",
+        "past_participle": "heard"
+      },
+      "hide": {
+        "persian": "پنهان کردن",
+        "irregular": true,
+        "past": "hid",
+        "past_participle": "hidden"
+      },
+      "hit": {
+        "persian": "زدن",
+        "irregular": true,
+        "past": "hit",
+        "past_participle": "hit"
+      },
+      "hold": {
+        "persian": "نگه داشتن",
+        "irregular": true,
+        "past": "held",
+        "past_participle": "held"
+      },
+      "hurt": {
+        "persian": "آسیب رساندن",
+        "irregular": true,
+        "past": "hurt",
+        "past_participle": "hurt"
+      },
+
+      "kneel": {
+        "persian": "زانو زدن",
+        "irregular": true,
+        "past": "knelt",
+        "past_participle": "knelt"
+      },
+
+      "lay": {
+        "persian": "قرار دادن",
+        "irregular": true,
+        "past": "laid",
+        "past_participle": "laid"
+      },
+      "lead": {
+        "persian": "رهبری کردن",
+        "irregular": true,
+        "past": "led",
+        "past_participle": "led"
+      },
+      "lean": {
+        "persian": "تمایل داشتن",
+        "irregular": true,
+        "past": "leaned",
+        "past_participle": "leaned"
+      },
+      "leap": {
+        "persian": "پرش کردن",
+        "irregular": true,
+        "past": "leapt",
+        "past_participle": "leapt"
+      },
+      "leave": {
+        "persian": "ترک کردن",
+        "irregular": true,
+        "past": "left",
+        "past_participle": "left"
+      },
+      "lend": {
+        "persian": "قرض دادن",
+        "irregular": true,
+        "past": "lent",
+        "past_participle": "lent"
+      },
+      "let": {
+        "persian": "اجازه دادن",
+        "irregular": true,
+        "past": "let",
+        "past_participle": "let"
+      },
+      "lie": {
+        "persian": "دراز کشیدن",
+        "irregular": true,
+        "past": "lay",
+        "past_participle": "lain"
+      },
+      "light": {
+        "persian": "روشن کردن",
+        "irregular": true,
+        "past": "lit",
+        "past_participle": "lit"
+      },
+      "lose": {
+        "persian": "از دست دادن",
+        "irregular": true,
+        "past": "lost",
+        "past_participle": "lost"
+      },
+      "make": {
+        "persian": "ساختن",
+        "irregular": true,
+        "past": "made",
+        "past_participle": "made"
+      },
+      "mean": {
+        "persian": "معنی داشتن",
+        "irregular": true,
+        "past": "meant",
+        "past_participle": "meant"
+      },
+      "put": {
+        "persian": "گذاشتن",
+        "irregular": true,
+        "past": "put",
+        "past_participle": "put"
+      },
+      "quit": {
+        "persian": "ترک کردن",
+        "irregular": true,
+        "past": "quit",
+        "past_participle": "quit"
+      },
+      "ride": {
+        "persian": "سواری کردن",
+        "irregular": true,
+        "past": "rode",
+        "past_participle": "ridden"
+      },
+      "ring": {
+        "persian": "زنگ زدن",
+        "irregular": true,
+        "past": "rang",
+        "past_participle": "rung"
+      },
+      "rise": {
+        "persian": "برخاستن",
+        "irregular": true,
+        "past": "rose",
+        "past_participle": "risen"
+      },
+      "say": {
+        "persian": "گفتن",
+        "irregular": true,
+        "past": "said",
+        "past_participle": "said"
+      },
+        "abide": {
+          "persian": "پایبند بودن",
+          "irregular": true,
+          "past": "abode",
+          "past_participle": "abode"
+        },
+        "bind": {
+          "persian": "بستن",
+          "irregular": true,
+          "past": "bound",
+          "past_participle": "bound"
+        },
+          "awaken": {
+            "persian": "بیدار شدن",
+            "irregular": true,
+            "past": "awoke",
+            "past_participle": "awoken"
+          },
+          "burst": {
+            "persian": "پاره شدن",
+            "irregular": true,
+            "past": "burst",
+            "past_participle": "burst"
+          },
+          "cast": {
+            "persian": "پرتاب کردن",
+            "irregular": true,
+            "past": "cast",
+            "past_participle": "cast"
+          },
+          "dive": {
+            "persian": "غواصی کردن",
+            "irregular": true,
+            "past": "dove",
+            "past_participle": "dove"
+          },
+
+          "forsake": {
+            "persian": "ترک کردن",
+            "irregular": true,
+            "past": "forsook",
+            "past_participle": "forsaken"
+          },
+          "grind": {
+            "persian": "خرد کردن",
+            "irregular": true,
+            "past": "ground",
+            "past_participle": "ground"
+          },
+            "behold": {
+              "persian": "دیدن",
+              "irregular": true,
+              "past": "beheld",
+              "past_participle": "beheld"
+            },
+            "betide": {
+              "persian": "رخ دادن",
+              "irregular": true,
+              "past": "betided",
+              "past_participle": "betided"
+            },
+            "bide": {
+              "persian": "صبر کردن",
+              "irregular": true,
+              "past": "bided",
+              "past_participle": "bided"
+            },
+            "blear": {
+              "persian": "چشمها را آزار دادن",
+              "irregular": true,
+              "past": "bleared",
+              "past_participle": "bleared"
+            },
+            "chide": {
+              "persian": "سرزنش کردن",
+              "irregular": true,
+              "past": "chid",
+              "past_participle": "chidden"
+            },
+            "cleave": {
+              "persian": "فرو رفتن",
+              "irregular": true,
+              "past": "cleft",
+              "past_participle": "cleft"
+            },
+            "clothe": {
+              "persian": "پوشاندن",
+              "irregular": true,
+              "past": "clad",
+              "past_participle": "clad"
+            },
+            "cozen": {
+              "persian": "فریب دادن",
+              "irregular": true,
+              "past": "cozened",
+              "past_participle": "cozened"
+            },
+            "deem": {
+              "persian": "تصور کردن",
+              "irregular": true,
+              "past": "deemed",
+              "past_participle": "deemed"
+            },
+            "dwell": {
+              "persian": "ساکن بودن",
+              "irregular": true,
+              "past": "dwelt",
+              "past_participle": "dwelt"
+            },
+            "gird": {
+              "persian": "حلقه زدن",
+              "irregular": true,
+              "past": "girt",
+              "past_participle": "girt"
+            },
+            "grieve": {
+              "persian": "غمگین شدن",
+              "irregular": true,
+              "past": "grieved",
+              "past_participle": "grieved"
+            },
+            "heave": {
+              "persian": "بلند کردن",
+              "irregular": true,
+              "past": "heaved",
+              "past_participle": "heaved"
+            },
+            "hew": {
+              "persian": "بریدن",
+              "irregular": true,
+              "past": "hewed",
+              "past_participle": "hewn"
+            },
+            "lave": {
+              "persian": "شستشو دادن",
+              "irregular": true,
+              "past": "laved",
+              "past_participle": "laved"
+            },
+            "melt": {
+              "persian": "ذوب شدن",
+              "irregular": true,
+              "past": "melted",
+              "past_participle": "melted"
+            },
+            "rend": {
+              "persian": "پاره کردن",
+              "irregular": true,
+              "past": "rent",
+              "past_participle": "rent"
+            },
+            "shrink": {
+              "persian": "جمع شدن",
+              "irregular": true,
+              "past": "shrank",
+              "past_participle": "shrunk"
+            },
+              "bereave": {
+                "persian": "از دست دادن",
+                "irregular": true,
+                "past": "bereft",
+                "past_participle": "bereft"
+              },
+              "beseech": {
+                "persian": "تقاضا کردن",
+                "irregular": true,
+                "past": "besought",
+                "past_participle": "besought"
+              },
+              "betake": {
+                "persian": "روم به",
+                "irregular": true,
+                "past": "betook",
+                "past_participle": "betaken"
+              },
+              "burn": {
+                "persian": "سوختن",
+                "irregular": true,
+                "past": "burnt",
+                "past_participle": "burnt"
+              },
+              "clad": {
+                "persian": "پوشاندن",
+                "irregular": true,
+                "past": "clad",
+                "past_participle": "clad"
+              },
+              "climb": {
+                "persian": "بالا رفتن",
+                "irregular": true,
+                "past": "climbed",
+                "past_participle": "climbed"
+              },
+              "knit": {
+                "persian": "بافتن",
+                "irregular": true,
+                "past": "knit",
+                "past_participle": "knit"
+              },
+              "overcome": {
+                "persian": "غلبه کردن",
+                "irregular": true,
+                "past": "overcame",
+                "past_participle": "overcome"
+              },
+              "prove": {
+                "persian": "ثابت کردن",
+                "irregular": true,
+                "past": "proved",
+                "past_participle": "proven"
+              },
+              "sling": {
+                "persian": "آویزان کردن",
+                "irregular": true,
+                "past": "slung",
+                "past_participle": "slung"
+              },
+              "slit": {
+                "persian": "پاره کردن",
+                "irregular": true,
+                "past": "slit",
+                "past_participle": "slit"
+              },
+              "spit": {
+                "persian": "تف انداختن",
+                "irregular": true,
+                "past": "spat",
+                "past_participle": "spat"
+              },
+              "spring": {
+                "persian": "جست زدن",
+                "irregular": true,
+                "past": "sprang",
+                "past_participle": "sprung"
+              },
+              "stink": {
+                "persian": "بوی بد دادن",
+                "irregular": true,
+                "past": "stank",
+                "past_participle": "stunk"
+              },
+              "strew": {
+                "persian": "پاشیدن",
+                "irregular": true,
+                "past": "strewed",
+                "past_participle": "strewn"
+              },
+              "swing": {
+                "persian": "تاب خوردن",
+                "irregular": true,
+                "past": "swung",
+                "past_participle": "swung"
+              },
+              "tear": {
+                "persian": "پاره کردن",
+                "irregular": true,
+                "past": "tore",
+                "past_participle": "torn"
+              },
+              "weave": {
+                "persian": "بافتن",
+                "irregular": true,
+                "past": "wove",
+                "past_participle": "woven"
+              }
+
+            }
+          
+        
