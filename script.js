@@ -1,5 +1,4 @@
 let verbData = {};
-
 fetch('irregularVerbs.json')
   .then(response => response.json())
   .then(data => {
@@ -12,18 +11,28 @@ function detectLanguage(word) {
   return persianRegex.test(word) ? 'persian' : 'english';
 }
 
-document.getElementById("word-form").addEventListener("submit", function(event) {
+document.getElementById("word-form").addEventListener("submit", function (event) {
   event.preventDefault();
-  
+
   const word = document.getElementById("word-input").value.trim();
   const resultDiv = document.getElementById("result");
 
   const language = detectLanguage(word);
 
   if (language === 'english') {
-    if (verbData[word]) {
-      const verbInfo = verbData[word];
+    const result = findVerb(word);
+
+    if (result) {
+      const { verb, verbInfo, formType } = result;
       let resultMessage = `<h3>کلمه فارسی معنی: ${verbInfo.persian}</h3>`;
+
+      if (formType === 'past') {
+        resultMessage += `<p>این کلمه در شکل گذشته است.</p>`;
+      } else if (formType === 'past participle') {
+        resultMessage += `<p>این کلمه در شکل کامل است.</p>`;
+      } else {
+        resultMessage += `<p>این فعل در حالت ساده است.</p>`;
+      }
 
       if (verbInfo.irregular) {
         resultMessage += `
@@ -37,13 +46,12 @@ document.getElementById("word-form").addEventListener("submit", function(event) 
       }
 
       resultDiv.innerHTML = resultMessage;
-    } else if (findVerbByForm(word)) {
-      resultDiv.innerHTML = findVerbByForm(word);
     } else {
       resultDiv.innerHTML = `<h6 class="text-danger">این کلمه در دیتابیس موجود نیست، بنابراین این فعل با قاعده است.</h6>`;
     }
   } else if (language === 'persian') {
     let found = false;
+
     for (let verb in verbData) {
       if (verbData[verb].persian === word) {
         const verbInfo = verbData[verb];
@@ -71,27 +79,24 @@ document.getElementById("word-form").addEventListener("submit", function(event) 
     }
   }
 });
-function findVerbByForm(word) {
+
+function findVerb(word) {
+  if (!word) return null; 
+
   for (let verb in verbData) {
     const verbInfo = verbData[verb];
-    if (verbInfo.past === word) {
-      return generateResultMessage(verb, verbInfo, 'past');
-    } else if (verbInfo.past_participle === word) {
-      return generateResultMessage(verb, verbInfo, 'past participle');
+
+    if (!verbInfo) continue;
+
+    if (verb?.toLowerCase() === word.toLowerCase()) {
+      return { verb, verbInfo, formType: 'simple' }; 
+    } else if (verbInfo.past?.toLowerCase() === word.toLowerCase()) {
+      return { verb, verbInfo, formType: 'past' };
+    } else if (verbInfo.past_participle?.toLowerCase() === word.toLowerCase()) {
+      return { verb, verbInfo, formType: 'past participle' }; 
     }
   }
   return null;
-}
-
-function generateResultMessage(verb, verbInfo, formType) {
-  return `
-    <h3>کلمه انگلیسی: ${verb}</h3>
-    <p>این فعل در شکل ${formType} است.</p>
-    <button class="btn btn-custom" data-toggle="modal" data-target="#verbModal" 
-            onclick="showModal('${verbInfo.past}', '${verbInfo.past_participle}')">
-      نمایش شکل‌های مختلف
-    </button>
-  `;
 }
 
 function showModal(past, pastParticiple) {
@@ -99,5 +104,4 @@ function showModal(past, pastParticiple) {
   document.getElementById('past-participle').textContent = `کامل: ${pastParticiple}`;
 }
 
-$('#verbModal').on('show.bs.modal', function () {
-});
+$('#verbModal').on('show.bs.modal', function () {});
