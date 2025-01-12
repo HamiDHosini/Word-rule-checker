@@ -1,4 +1,5 @@
 let verbData = {};
+
 fetch('irregularVerbs.json')
   .then(response => response.json())
   .then(data => {
@@ -34,16 +35,12 @@ document.getElementById("word-form").addEventListener("submit", function (event)
         resultMessage += `<p>این فعل در حالت ساده است.</p>`;
       }
 
-      if (verbInfo.irregular) {
-        resultMessage += `
-          <button class="btn btn-custom" data-toggle="modal" data-target="#verbModal" 
-                  onclick="showModal('${verbInfo.past}', '${verbInfo.past_participle}')">
-            نمایش شکل‌های مختلف
-          </button>
-        `;
-      } else {
-        resultMessage += `<p>این فعل با قاعده است.</p>`;
-      }
+      resultMessage += `
+        <button class="btn btn-custom" data-toggle="modal" data-target="#verbModal" 
+                onclick="showModal('${verb}', '${verbInfo.past}', '${verbInfo.past_participle}')">
+          نمایش شکل‌های مختلف
+        </button>
+      `;
 
       resultDiv.innerHTML = resultMessage;
     } else {
@@ -57,16 +54,12 @@ document.getElementById("word-form").addEventListener("submit", function (event)
         const verbInfo = verbData[verb];
         let resultMessage = `<h3>معنی انگلیسی: ${verb}</h3>`;
 
-        if (verbInfo.irregular) {
-          resultMessage += `
-            <button class="btn btn-custom" data-toggle="modal" data-target="#verbModal" 
-                    onclick="showModal('${verbInfo.past}', '${verbInfo.past_participle}')">
-              نمایش شکل‌های مختلف
-            </button>
-          `;
-        } else {
-          resultMessage += `<p>این فعل با قاعده است.</p>`;
-        }
+        resultMessage += `
+          <button class="btn btn-custom" data-toggle="modal" data-target="#verbModal" 
+                  onclick="showModal('${verb}', '${verbInfo.past}', '${verbInfo.past_participle}')">
+            نمایش شکل‌های مختلف
+          </button>
+        `;
 
         resultDiv.innerHTML = resultMessage;
         found = true;
@@ -81,25 +74,26 @@ document.getElementById("word-form").addEventListener("submit", function (event)
 });
 
 function findVerb(word) {
-  if (!word) return null; 
+  if (!word) return null;
 
   for (let verb in verbData) {
     const verbInfo = verbData[verb];
 
-    if (!verbInfo) continue;
+    if (!verbInfo) continue; 
 
     if (verb?.toLowerCase() === word.toLowerCase()) {
       return { verb, verbInfo, formType: 'simple' }; 
     } else if (verbInfo.past?.toLowerCase() === word.toLowerCase()) {
-      return { verb, verbInfo, formType: 'past' };
+      return { verb, verbInfo, formType: 'past' }; 
     } else if (verbInfo.past_participle?.toLowerCase() === word.toLowerCase()) {
-      return { verb, verbInfo, formType: 'past participle' }; 
+      return { verb, verbInfo, formType: 'past participle' };
     }
   }
   return null;
 }
 
-function showModal(past, pastParticiple) {
+function showModal(base, past, pastParticiple) {
+  document.getElementById('base-tense').textContent = `ساده: ${base}`;
   document.getElementById('past-tense').textContent = `گذشته: ${past}`;
   document.getElementById('past-participle').textContent = `کامل: ${pastParticiple}`;
 }
