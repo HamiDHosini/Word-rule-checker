@@ -9,41 +9,94 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="container">
-    <h3>تشخیص لغات بی‌قاعده</h3>
-    <form id="word-form">
-      <div class="form-group">
-        <label for="word-input">لغت فارسی یا انگلیسی را وارد کنید:</label>
-        <input type="text" id="word-input" class="form-control" placeholder="لغت را وارد کنید" required>
-      </div>
-      <button type="submit" class="btn-custom">بررسی</button>
-    </form>
 
-    <div id="result" class="result"></div>
+  <div id="header-container"></div>
 
-    <div class="modal fade" id="verbModal" tabindex="-1" role="dialog" aria-labelledby="verbModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="verbModalLabel">شکل‌های مختلف فعل</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="بستن">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p id="base-tense">...</p>
-            <p id="past-tense">...</p>
-            <p id="past-participle">...</p>            
+
+
+  <div class="container my-4">
+        <div>
+          <h1 class="text-primary fw-bold text-center">درباره وب‌سایت ما</h1>
+          <p class="text-justify p-1">
+            وب‌سایت ما یک محیط کاربردی و جذاب برای یادگیری و بررسی لغات زبان انگلیسی است. در اینجا شما می‌توانید لغات موردنظر خود را جستجو کرده و متوجه شوید که آیا آن‌ها باقاعده یا بی‌قاعده هستند. همچنین، در صفحه مخصوص لیست لغات، به تعداد زیادی از لغات دسترسی خواهید داشت که می‌توانید آن‌ها را بر اساس نیاز خود مشاهده یا جستجو کنید. با استفاده از رابط کاربری ساده و کاربرپسند، تجربه‌ای لذت‌بخش و مفید از یادگیری زبان انگلیسی را خواهید داشت.
+          </p>
+        </div>
+  </div>
+
+
+  <div class="container my-4 py-4">
+    <div class="row align-items-center gy-4">
+      <div class="col-md-6">
+        <div class="rounded shadow p-3 text-center">
+          <h3 class="text-primary fw-bold mb-3 text-center">تشخیص لغات بی‌قاعده</h3>
+          <form id="word-form">
+            <div class="form-group">
+              <label for="word-input">لغت فارسی یا انگلیسی را وارد کنید:</label>
+              <input type="text" id="word-input" class="form-control" placeholder="لغت را وارد کنید" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">بررسی</button>
+          </form>
+      
+          <div id="result" class="result"></div>
+      
+          <div class="modal fade" id="verbModal" tabindex="-1" role="dialog" aria-labelledby="verbModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="verbModalLabel">شکل‌های مختلف فعل</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="بستن">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p id="base-tense">...</p>
+                  <p id="past-tense">...</p>
+                  <p id="past-participle">...</p>            
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="col-md-6">
+        <div>
+          <h3 class="text-primary fw-bold text-center">امکانات</h3>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              جستجوی سریع و دقیق لغات
+                            <span class="badge text-bg-primary rounded-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              دسته‌بندی لغات باقاعده و بی‌قاعده              <span class="badge text-bg-primary rounded-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              دسترسی به لیست جامع افعال انگلیسی              <span class="badge text-bg-primary rounded-pill">3</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              طراحی واکنش‌گرا برای موبایل و دسکتاپ            
+              <span class="badge text-bg-primary rounded-pill">4</span></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="text-center my-4">
+      <a href="./search.html" class="btn btn-primary ">لیست لغات</a>
     </div>
   </div>
+
+
+
+  <div id="footer-container"></div>
+
+
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="./script.js"></script>
+  <script src="./Component.js"></script>
 </body>
 </html>

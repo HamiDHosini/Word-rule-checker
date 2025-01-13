@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لیست افعال</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .list-group{
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+
+  <div class="container mt-4">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div>
+                <h1 class="text-primary fw-bold text-center">لیست لغات بی‌قاعده</h1>
+                <p class="text-justify p-1">
+                    در این صفحه، شما به یک لیست جامع از افعال بی‌قاعده و معانی فارسی آن‌ها دسترسی خواهید داشت. شما می‌توانید  لغات بی قاعده را جستجو کرده برای هر کلمه، شکل‌های مختلف آن شامل گذشته و گذشته کامل نیز در دسترس است.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h6 class="fw-bold">جستجوی لغت فارسی یا انگلیسی</h6>
+                <form id="search-form" class="mb-3">
+
+                      <input type="text" id="search-input" class="form-control" placeholder="جستجو کنید...">
+                      <button type="submit" class="btn btn-primary w-100 my-3">جستجو</button>
+
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="container">
+    <ul id="word-list" class="list-group">
+    </ul>
+
+    <div class="d-flex justify-content-between my-3">
+      <button id="load-less" class="btn btn-secondary" style="display: none;" onclick="loadLess()">کمتر نمایش دهید</button>
+      <button id="load-more" class="btn btn-secondary" onclick="loadMore()">بیشتر نمایش دهید</button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="verbModal" tabindex="-1" aria-labelledby="verbModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="verbModalLabel">جزئیات فعل</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="base-tense"></p>
+          <p id="past-tense"></p>
+          <p id="past-participle"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+
+  <script src="./search.js"></script>
+  <script src="./Component.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
