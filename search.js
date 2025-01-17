@@ -1,24 +1,28 @@
 let verbData = {};
-const ITEMS_PER_PAGE = 10; 
+const ITEMS_PER_PAGE = 10;
 let currentPage = 1;
 
 fetch('irregularVerbs.json')
   .then(response => response.json())
   .then(data => {
     verbData = data;
-    renderList(); 
+    renderList();
   })
   .catch(error => console.error("Error loading JSON:", error));
 
 function renderList(searchTerm = '') {
   const listContainer = document.getElementById('word-list');
 
-  // جستجو در زبان انگلیسی و فارسی
   const searchResults = Object.keys(verbData)
-    .filter(verb => 
-      verb.toLowerCase().includes(searchTerm.toLowerCase()) || // جستجو در لغات انگلیسی
-      (verbData[verb].persian && verbData[verb].persian.includes(searchTerm)) // جستجو در معانی فارسی
-    )
+    .filter(verb => {
+      const verbInfo = verbData[verb];
+      return (
+        verb.toLowerCase().includes(searchTerm.toLowerCase()) || 
+        (verbInfo.past && verbInfo.past.toLowerCase().includes(searchTerm.toLowerCase())) || 
+        (verbInfo.past_participle && verbInfo.past_participle.toLowerCase().includes(searchTerm.toLowerCase())) || // جستجو در شکل کامل
+        (verbInfo.persian && verbInfo.persian.includes(searchTerm))
+      );
+    })
     .slice(0, ITEMS_PER_PAGE * currentPage);
 
   if (searchResults.length === 0) {
@@ -31,20 +35,25 @@ function renderList(searchTerm = '') {
     const verbInfo = verbData[verb];
     listHTML += `
       <li class="list-group-item d-flex justify-content-between align-items-center">
-        ${verb} - ${verbInfo.persian}
+        ${verb} - ${verbInfo.persian || 'نامشخص'}
         <button class="btn btn-primary btn-sm" onclick="showDetails('${verb}')">جزئیات</button>
       </li>`;
   });
 
   listContainer.innerHTML = listHTML;
 
-  document.getElementById('load-more').style.display =
-    searchResults.length === Object.keys(verbData).filter(verb => 
+  const totalResults = Object.keys(verbData).filter(verb => {
+    const verbInfo = verbData[verb];
+    return (
       verb.toLowerCase().includes(searchTerm.toLowerCase()) || 
-      (verbData[verb].persian && verbData[verb].persian.includes(searchTerm))
-    ).length
-      ? 'none'
-      : 'inline-block';
+      (verbInfo.past && verbInfo.past.toLowerCase().includes(searchTerm.toLowerCase())) || 
+      (verbInfo.past_participle && verbInfo.past_participle.toLowerCase().includes(searchTerm.toLowerCase())) || 
+      (verbInfo.persian && verbInfo.persian.includes(searchTerm))
+    );
+  }).length;
+
+  document.getElementById('load-more').style.display =
+    searchResults.length >= totalResults ? 'none' : 'inline-block';
 
   document.getElementById('load-less').style.display = currentPage > 1 ? 'inline-block' : 'none';
 }
@@ -52,8 +61,8 @@ function renderList(searchTerm = '') {
 function showDetails(verb) {
   const verbInfo = verbData[verb];
   document.getElementById('base-tense').textContent = `ساده: ${verb}`;
-  document.getElementById('past-tense').textContent = `گذشته: ${verbInfo.past}`;
-  document.getElementById('past-participle').textContent = `کامل: ${verbInfo.past_participle}`;
+  document.getElementById('past-tense').textContent = `گذشته: ${verbInfo.past || 'نامشخص'}`;
+  document.getElementById('past-participle').textContent = `کامل: ${verbInfo.past_participle || 'نامشخص'}`;
   document.getElementById('verbModalLabel').textContent = `جزئیات فعل ${verb}`;
   const modal = new bootstrap.Modal(document.getElementById('verbModal'));
   modal.show();
@@ -70,10 +79,8 @@ function loadLess() {
     renderList(document.getElementById('search-input').value.trim());
   }
 }
-
-document.getElementById('search-form').addEventListener('submit', function (event) {
-  event.preventDefault();
+document.getElementById('search-input').addEventListener('input', function () {
   currentPage = 1;
-  const searchTerm = document.getElementById('search-input').value.trim();
+  const searchTerm = this.value.trim();
   renderList(searchTerm);
 });

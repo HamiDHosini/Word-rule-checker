@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بازی حدس لغات</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card-box {
+      text-align: center;
+      padding: 40px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #4f8a8b;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .word-display {
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 10px;
+      margin: 20px 0;
+      color: #2d3b45;
+      text-transform: uppercase;
+      border-bottom: 5px dotted #ffc107;;
+      display: inline-block;
+    }
+    .btn-primary:focus,
+    .btn-success:focus,
+    .btn-warning:focus {
+      outline: none;
+    }
+
+    #result-message {
+      font-size: 20px;
+      color: #555;
+    }
+
+    #word-meaning {
+      font-size: 18px;
+      color: #888;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    #next-word {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+
+  <div class="container my-5">
+    <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+            <div>
+                <h1 class="text-primary fw-bold text-center">بازی حدس لغات</h1>
+                <p class="text-center">این بازی حدس لغات یک روش جذاب و آموزشی برای یادگیری افعال بی‌قاعده زبان انگلیسی است. در این بازی، یک لغت به‌صورت مخلوط از حروف نمایش داده می‌شود و شما باید آن را به‌درستی حدس بزنید. پس از آنکه درست حدس زدید، معنی لغت نیز برای شما نمایش داده می‌شود و می‌توانید به لغت بعدی بروید. این بازی به شما کمک می‌کند تا لغات را بهتر به‌خاطر بسپارید و درک خود از افعال بی‌قاعده را تقویت کنید.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card-box shadow-lg rounded">
+                <h1 class="text-primary"> حدس لغات</h1>
+                <div class="game-container">
+                  <div class="word-display">
+                    <p id="word-display" class="lead">...</p>
+                  </div>
+                  <div class="guess-input">
+                    <input type="text" id="guess-input" class="form-control" placeholder="حدس بزنید" />
+                    <button id="submit-guess" class="btn btn-primary w-100 my-3">حدس بزن</button>
+                  </div>
+                  <p id="result-message"></p>
+                  <div id="word-meaning"></div>
+                  <button id="next-word" class="btn btn-success mt-2">لغت بعدی</button>
+                  <button id="change-word" class="btn btn-warning">تغییر لغت</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div id="footer-container"></div>
+
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="game.js"></script>
+  <script src="./Component.js"></script>
+</body>
+</html>

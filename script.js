@@ -37,7 +37,7 @@ document.getElementById("word-form").addEventListener("submit", function (event)
       }
 
       resultMessage += `
-        <button class="btn btn-primary" data-toggle="modal" data-target="#verbModal" 
+        <button class="btn btn-warning" data-toggle="modal" data-target="#verbModal" 
                 onclick="showModal('${verb}', '${verbInfo.past}', '${verbInfo.past_participle}')">
           نمایش شکل‌های مختلف
         </button>
