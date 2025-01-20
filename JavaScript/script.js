@@ -1,7 +1,7 @@
 
 let verbData = {};
 
-fetch('irregularVerbs.json')
+fetch('./JSON/irregularVerbs.json')
   .then(response => response.json())
   .then(data => {
     verbData = data;

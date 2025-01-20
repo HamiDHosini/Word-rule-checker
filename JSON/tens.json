@@ -1,0 +1,113 @@
+{
+    "tenses": [
+      {
+        "tense_en": "Present Simple",
+        "tense_fa": "حال ساده",
+        "description": "Used to describe general facts, habits, or things that are always true",
+        "description_fa": "برای بیان حقایق عمومی، عادت‌ها یا مواردی که همیشه درست هستند",
+        "structure": "Subject + Base form of verb (+s/es)",
+        "example": "I eat an apple every day",
+        "example_fa": "من هر روز یک سیب می خورم"
+      },
+      {
+        "tense_en": "Present Continuous",
+        "tense_fa": "حال استمراری",
+        "description": "Used to describe actions happening right now or around the present time",
+        "description_fa": "برای بیان اقداماتی که هم‌اکنون در حال انجام هستند یا در حال رخ دادن در زمان حال",
+        "structure": "Subject + am/are/is + verb+ing",
+        "example": "I am eating an apple right now",
+        "example_fa": "من هم اکنون در حال خوردن سیب هستم"
+      },
+      {
+        "tense_en": "Present Perfect",
+        "tense_fa": "حال کامل",
+        "description": "Used to describe actions that have occurred at an unspecified time before now or actions that started in the past and continue to the present",
+        "description_fa": "برای بیان اقداماتی که در زمانی نامشخص قبل از حال رخ داده‌اند یا اقداماتی که از گذشته آغاز شده و همچنان ادامه دارند",
+        "structure": "Subject + have/has + past participle",
+        "example": "I have eaten an apple",
+        "example_fa": "من یک سیب خورده‌ام"
+      },
+      {
+        "tense_en": "Present Perfect Continuous",
+        "tense_fa": "حال کامل استمراری",
+        "description": "Used to describe actions that started in the past and are still continuing or have just finished",
+        "description_fa": "برای بیان اقداماتی که از گذشته شروع شده‌اند و همچنان ادامه دارند یا به تازگی تمام شده‌اند",
+        "structure": "Subject + have/has + been + verb+ing",
+        "example": "I have been eating an apple for an hour",
+        "example_fa": "من برای یک ساعت در حال خوردن سیب بوده‌ام"
+      },
+      {
+        "tense_en": "Past Simple",
+        "tense_fa": "گذشته ساده",
+        "description": "Used to describe actions that were completed in the past",
+        "description_fa": "برای بیان اقداماتی که در گذشته کامل شده‌اند",
+        "structure": "Subject + past form of verb",
+        "example": "I ate an apple yesterday",
+        "example_fa": "من دیروز یک سیب خوردم"
+      },
+      {
+        "tense_en": "Past Continuous",
+        "tense_fa": "گذشته استمراری",
+        "description": "Used to describe actions that were happening at a particular moment in the past",
+        "description_fa": "برای بیان اقداماتی که در زمان مشخصی در گذشته در حال رخ دادن بودند",
+        "structure": "Subject + was/were + verb+ing",
+        "example": "I was eating an apple when you called",
+        "example_fa": "من در حالی که تو تماس گرفتی، در حال خوردن سیب بودم"
+      },
+      {
+        "tense_en": "Past Perfect",
+        "tense_fa": "گذشته کامل",
+        "description": "Used to describe actions that were completed before another action in the past",
+        "description_fa": "برای بیان اقداماتی که قبل از عمل دیگری در گذشته تمام شده‌اند",
+        "structure": "Subject + had + past participle",
+        "example": "I had eaten an apple before you called",
+        "example_fa": "من قبل از اینکه تو تماس بگیری، یک سیب خورده بودم"
+      },
+      {
+        "tense_en": "Past Perfect Continuous",
+        "tense_fa": "گذشته کامل استمراری",
+        "description": "Used to describe actions that were happening before another action in the past and continued until that time",
+        "description_fa": "برای بیان اقداماتی که قبل از عمل دیگری در گذشته در حال رخ دادن بودند و تا آن زمان ادامه داشتند",
+        "structure": "Subject + had + been + verb+ing",
+        "example": "I had been eating an apple when you called",
+        "example_fa": "من در حال خوردن سیب بودم وقتی تو تماس گرفتی"
+      },
+      {
+        "tense_en": "Future Simple",
+        "tense_fa": "آینده ساده",
+        "description": "Used to describe actions that will happen in the future",
+        "description_fa": "برای بیان اقداماتی که در آینده رخ خواهند داد",
+        "structure": "Subject + will + base form of verb",
+        "example": "I will eat an apple tomorrow",
+        "example_fa": "من فردا یک سیب خواهم خورد"
+      },
+      {
+        "tense_en": "Future Continuous",
+        "tense_fa": "آینده استمراری",
+        "description": "Used to describe actions that will be happening at a particular time in the future",
+        "description_fa": "برای بیان اقداماتی که در زمان مشخصی در آینده در حال رخ دادن خواهند بود",
+        "structure": "Subject + will + be + verb+ing",
+        "example": "I will be eating an apple at 5 PM",
+        "example_fa": "من ساعت ۵ عصر در حال خوردن سیب خواهم بود"
+      },
+      {
+        "tense_en": "Future Perfect",
+        "tense_fa": "آینده کامل",
+        "description": "Used to describe actions that will be completed before a certain point in the future",
+        "description_fa": "برای بیان اقداماتی که قبل از یک نقطه خاص در آینده کامل خواهند شد",
+        "structure": "Subject + will + have + past participle",
+        "example": "I will have eaten an apple by 5 PM",
+        "example_fa": "من تا ساعت ۵ عصر یک سیب خورده‌ام"
+      },
+      {
+        "tense_en": "Future Perfect Continuous",
+        "tense_fa": "آینده کامل استمراری",
+        "description": "Used to describe actions that will be continuing until a certain time in the future",
+        "description_fa": "برای بیان اقداماتی که تا زمان خاصی در آینده ادامه خواهند داشت",
+        "structure": "Subject + will + have + been + verb+ing",
+        "example": "I will have been eating an apple for an hour by 5 PM",
+        "example_fa": "من تا ساعت ۵ عصر به مدت یک ساعت در حال خوردن سیب خواهم بود"
+      }
+    ]
+  }
+  

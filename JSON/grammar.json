@@ -1,0 +1,121 @@
+[
+    {
+      "id": "auxiliary-verbs",
+      "title": "افعال کمکی",
+      "description": "افعال کمکی به فعل اصلی کمک می‌کنند تا زمان یا حالت خاصی را بیان کنند.",
+      "details": "افعال کمکی برای ساخت جملات پرسشی، منفی و برای زمان‌های مختلف مانند حال، گذشته و آینده استفاده می‌شوند. از افعال کمکی مانند: 'is', 'am', 'are', 'do', 'does', 'did' استفاده می‌شود.",
+      "structure": "Subject + Auxiliary verb + Main verb",
+      "examples": [
+        "She **is** studying.",
+        "We **do not** know the answer.",
+        "Did you **see** that movie?"
+      ]
+    },
+    {
+      "id": "comparative-adjectives",
+      "title": "صفات مقایسه‌ای",
+      "description": "صفات مقایسه‌ای برای مقایسه دو چیز یا فرد استفاده می‌شوند.",
+      "details": "برای مقایسه دو چیز، از صفات مقایسه‌ای مانند 'bigger', 'smaller', 'more beautiful' استفاده می‌شود. در بیشتر صفات با اضافه کردن '-er' یا 'more' به صفت، مقایسه ایجاد می‌شود.",
+      "structure": "Adjective + than + compared object",
+      "examples": [
+        "This car is **faster** than that one.",
+        "She is **more intelligent** than her brother."
+      ]
+    },
+    {
+      "id": "reflexive-pronouns",
+      "title": "ضمیرهای انعکاسی",
+      "description": "ضمیرهای انعکاسی زمانی استفاده می‌شوند که فاعل و مفعول جمله یکسان باشند.",
+      "details": "ضمیرهای انعکاسی مانند: 'myself', 'yourself', 'himself' به فرد یا چیزی اشاره دارند که عمل را خود انجام می‌دهد.",
+      "structure": "Subject + Reflexive pronoun + Verb",
+      "examples": [
+        "She did it **herself**.",
+        "I taught **myself** how to play guitar.",
+        "He looked at **himself** in the mirror."
+      ]
+    },
+    {
+      "id": "modal-verbs",
+      "title": "افعال مودال",
+      "description": "افعال مودال برای بیان توانایی، درخواست، اجبار یا احتمال استفاده می‌شوند.",
+      "details": "افعال مودال مانند: 'can', 'could', 'may', 'might', 'must' برای بیان امکان، توانایی، نیاز یا اجازه به کار می‌روند.",
+      "structure": "Subject + Modal verb + Base verb",
+      "examples": [
+        "I **can** swim.",
+        "You **must** study hard.",
+        "She **might** come to the party."
+      ]
+    },
+    {
+      "id": "interrogative-pronouns",
+      "title": "ضمیرهای پرسشی",
+      "description": "ضمیرهای پرسشی برای پرسیدن سوالات و گرفتن اطلاعات استفاده می‌شوند.",
+      "details": "ضمیرهای پرسشی مانند: 'who', 'what', 'which' برای سوالات استفاده می‌شوند تا شخص یا چیز خاصی را بپرسند.",
+      "structure": "Interrogative pronoun + Auxiliary verb + Subject + Object",
+      "examples": [
+        "**What** do you want for dinner?",
+        "**Who** is your best friend?",
+        "**Which** book do you prefer?"
+      ]
+    },
+    {
+      "id": "conditional-sentences",
+      "title": "جملات شرطی",
+      "description": "جملات شرطی شرایط خاصی را برای وقوع یک عمل یا حالت بیان می‌کنند.",
+      "details": "جملات شرطی به چهار نوع تقسیم می‌شوند: نوع صفر (واقعیت‌های عمومی)، نوع اول (احتمال در آینده)، نوع دوم (احتمال در حال یا آینده) و نوع سوم (حالت فرضی در گذشته).",
+      "structure": "If + Condition + Result",
+      "examples": [
+        "If it **rains**, we **will stay** home. (نوع اول)",
+        "If I **were** you, I **would talk** to her. (نوع دوم)",
+        "If he **had studied**, he **would have passed** the exam. (نوع سوم)"
+      ]
+    },
+    {
+      "id": "negative-sentences",
+      "title": "جملات منفی",
+      "description": "جملات منفی نشان‌دهنده عدم انجام کاری هستند.",
+      "details": "برای ساخت جملات منفی، از افعال کمکی مانند 'do not', 'does not', 'did not' همراه با فعل اصلی استفاده می‌کنیم.",
+      "structure": "Subject + Auxiliary verb + 'not' + Main verb",
+      "examples": [
+        "She **does not** like ice cream.",
+        "I **did not** go to the park.",
+        "They **cannot** swim."
+      ]
+    },
+    {
+      "id": "question-forms",
+      "title": "ساختارهای سوالی",
+      "description": "برای ساخت سوالات در زبان انگلیسی، معمولاً از افعال کمکی استفاده می‌شود.",
+      "details": "در سوالات، ترتیب فعل و فاعل تغییر می‌کند و اغلب از افعال کمکی برای ساخت سوالات استفاده می‌شود.",
+      "structure": "Auxiliary verb + Subject + Main verb",
+      "examples": [
+        "**Are** you coming?",
+        "**Did** you see the movie?",
+        "**Can** she help me?"
+      ]
+    },
+    {
+      "id": "imperative-sentences",
+      "title": "جملات امری",
+      "description": "جملات امری برای دستور دادن، درخواست یا پیشنهاد استفاده می‌شوند.",
+      "details": "در جملات امری، فاعل حذف می‌شود و فقط فعل در فرم اصلی می‌آید.",
+      "structure": "Verb + Object (optional)",
+      "examples": [
+        "Please **sit** down.",
+        "**Close** the door.",
+        "Don't **be** late."
+      ]
+    },
+    {
+      "id": "adjective-order",
+      "title": "ترتیب صفات",
+      "description": "در زبان انگلیسی، صفات باید در یک ترتیب خاص قرار بگیرند.",
+      "details": "ترتیب صحیح صفات به این شکل است: Quantity, Opinion, Size, Age, Shape, Color, Proper adjective (origin), Material, Purpose.",
+      "structure": "Noun + Adjectives + Noun",
+      "examples": [
+        "She has a **lovely big old round green** box.",
+        "This is a **beautiful small wooden** table."
+      ]
+    }
+  ]
+  

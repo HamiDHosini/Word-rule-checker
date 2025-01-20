@@ -2,7 +2,7 @@ let verbData = {};
 const ITEMS_PER_PAGE = 10;
 let currentPage = 1;
 
-fetch('irregularVerbs.json')
+fetch('./JSON/irregularVerbs.json')
   .then(response => response.json())
   .then(data => {
     verbData = data;

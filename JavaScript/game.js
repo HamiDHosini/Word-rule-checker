@@ -2,7 +2,7 @@ let verbData = {};
 let currentWord = {};  
 
 function loadWordsFromJson() {
-  fetch('irregularVerbs.json')
+  fetch('./JSON/irregularVerbs.json')
     .then(response => response.json())
     .then(data => {
       verbData = data; 

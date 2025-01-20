@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زمان‌های فعل انگلیسی</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">    
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            direction: rtl;
+            background-color: #f4f4f9; /* پس‌زمینه روشن */
+            color: #333; /* رنگ متن */
+        }
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .swiper-slide .card {
+            border: 1px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .swiper {
+        width: 100%;
+        height: 250px;
+        position: relative;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-button-next,
+.swiper-button-prev {
+    color: #007bff;
+    font-size: 2px !important;  /* اندازه آیکن‌ها را کوچکتر کرده‌ایم */
+    z-index: 10;
+}
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        color: #0056b3;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #007bff;
+        opacity: 0.7;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #0056b3;
+        opacity: 1;
+    }
+
+
+ 
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="container mt-5">
+        <h3 class="text-center fw-bold text-primary  mb-4">آموزش گرامر  در زبان انگلیسی</h3>
+        <p class="text-center mb-4">
+            در این صفحه شما می‌توانید با زمان‌های مختلف افعال در زبان انگلیسی آشنا شوید. 
+            این صفحه شامل توضیحات و مثال‌هایی از افعال مختلف است که در زمان‌های مختلف (حال ساده، گذشته ساده، گذشته کامل و ...) 
+            به همراه ترجمه فارسی و انگلیسی می‌باشد.
+            همچنین شما می‌توانید با جستجو افعال خاص را پیدا کرده و زمان‌های مختلف آن‌ها را مشاهده کنید.
+        </p>
+    </div>
+
+    <div class="container mt-5">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="grammarModal" tabindex="-1" role="dialog" aria-labelledby="grammarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="grammarModalLabel">جزئیات گرامر</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="grammarDescription"></p>
+                    <ul id="grammarExamples"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <form id="searchForm" class=" mb-4">
+            <input type="text" id="searchInput" class="form-control" placeholder="جستجوی زمان‌ها...">
+            <button type="submit" class="btn btn-primary w-100 mt-3">جستجو</button>
+        </form>
+
+        <div class="card my-5">
+            <div class="card-header">
+                لیست زمان‌ها
+            </div>
+            <ul id="tenseList" class="list-group list-group-flush">
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="tenseModal" tabindex="-1" role="dialog" aria-labelledby="tenseModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tenseModalLabel">جزئیات گرامر</h5>
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h6 class="text-primary">defination</h6>
+                                <p id="tenseDescription"></p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h6 class="text-primary">تعریف فارسی</h6>
+                                <p id="tenseDescription-fa"></p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h6 class="text-primary">STR</h6>
+                                <p id="tenseStructure"></p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h6 class="text-primary">EX</h6>
+                                <p id="tenseExample"></p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h6 class="text-primary">مثال فارسی</h6>
+                                <p id="tenseExample-fa"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close" data-dismiss="modal">بستن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div id="footer-container"></div>
+
+    
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="./JavaScript/tens.js"></script>
+    <script src="./JavaScript/Component.js"></script>
+    <script src="./JavaScript/grammar.js"></script>
+
+        
+    
+    
+</body>
+</html>
