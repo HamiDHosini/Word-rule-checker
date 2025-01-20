@@ -31,4 +31,3 @@
 1. این پروژه را از مخزن گیت هاب کلون کنید:
    ```bash
    git clone https://github.com/HamiDHosini/Word-rule-checker.git
-   ```
