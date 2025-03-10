@@ -3,7 +3,7 @@ function createHeader() {
      <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-sm">
   <div class="container">
     <a class="navbar-brand text-success fw-bold d-flex align-items-center" href="./index.html">
-      <i class="bi bi-journal-bookmark-fill me-2"></i> اکادمی انصار
+      <i class="bi bi-journal-bookmark-fill me-2"></i> دنیای لغات
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@ function createHeader() {
     <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title text-success fw-bold" id="offcanvasNavbarLabel">
-          <i class="bi bi-journal-bookmark-fill me-2"></i> اکادمی انصار
+          <i class="bi bi-journal-bookmark-fill me-2"></i> دنیای لغات
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
@@ -62,9 +62,9 @@ function createFooter() {
   const footer = `
    <footer class="bg-dark text-white text-center py-4">
       <div class="container">
-        <p>تحت نظر استاد یارزاده </p>
+        <p>تحت نظر استاد عبدالحمید  </p>
 
-        <p>© 2025 اکادمی انصار. تمامی حقوق محفوظ است.</p>
+        <p>© 2025 دنیای لغات. تمامی حقوق محفوظ است.</p>
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="./index.html" class="text-white">صفحه اصلی</a>
