@@ -56,7 +56,7 @@ document.getElementById("word-form").addEventListener("submit", function (event)
         let resultMessage = `<h3>معنی انگلیسی: ${verb}</h3>`;
 
         resultMessage += `
-          <button class="btn btn-custom" data-toggle="modal" data-target="#verbModal" 
+          <button class="btn btn-warning" data-toggle="modal" data-target="#verbModal" 
                   onclick="showModal('${verb}', '${verbInfo.past}', '${verbInfo.past_participle}')">
             نمایش شکل‌های مختلف
           </button>
